@@ -1,0 +1,16 @@
+Assets\microsoft-sdk.png
+Assets\placeholder-sdk.png
+Assets\smallTile-sdk.png
+Assets\splash-sdk.png
+Assets\squareTile-sdk.png
+Assets\storeLogo-sdk.png
+Assets\tile-sdk.png
+Assets\windows-sdk.png
+App.xbf
+Common\StandardStyles.xbf
+CustomHidDeviceAccess.xr.xml
+MainPage.xbf
+Sample-Utils\SampleTemplateStyles.xbf
+Scenario1_DeviceConnect.xbf
+Scenario2_SensorTriggeredVideoCapture.xbf
+Scenario3_SetReportInterval.xbf

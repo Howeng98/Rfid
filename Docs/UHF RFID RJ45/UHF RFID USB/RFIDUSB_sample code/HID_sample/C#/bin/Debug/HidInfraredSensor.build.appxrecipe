@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>STONEVAIO</Machine>
+    <WindowsUser>stone</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>Microsoft.SDKSamples.HidInfraredSensor.CS</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\CustomHidDeviceAccess.exe">
+      <PackagePath>CustomHidDeviceAccess.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\microsoft-sdk.png">
+      <PackagePath>Assets\microsoft-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\placeholder-sdk.png">
+      <PackagePath>Assets\placeholder-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\smallTile-sdk.png">
+      <PackagePath>Assets\smallTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\splash-sdk.png">
+      <PackagePath>Assets\splash-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\squareTile-sdk.png">
+      <PackagePath>Assets\squareTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\storeLogo-sdk.png">
+      <PackagePath>Assets\storeLogo-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\tile-sdk.png">
+      <PackagePath>Assets\tile-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\Assets\windows-sdk.png">
+      <PackagePath>Assets\windows-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\CustomHidDeviceAccess.xr.xml">
+      <PackagePath>CustomHidDeviceAccess.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\Scenario3_SetReportInterval.xbf">
+      <PackagePath>Scenario3_SetReportInterval.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\Scenario2_SensorTriggeredVideoCapture.xbf">
+      <PackagePath>Scenario2_SensorTriggeredVideoCapture.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\Scenario1_DeviceConnect.xbf">
+      <PackagePath>Scenario1_DeviceConnect.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\Sample-Utils\SampleTemplateStyles.xbf">
+      <PackagePath>Sample-Utils\SampleTemplateStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

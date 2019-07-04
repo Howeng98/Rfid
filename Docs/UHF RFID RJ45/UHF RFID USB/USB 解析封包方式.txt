@@ -1,0 +1,67 @@
+
+  From Device to Host:
+ 
+  ------------------------------------------------------
+ 
+Byte 0       1       2        3          4         5        6         7        8
+  +------+-------+-------+----------+---------+---------+---------+---------+-------...
+  | TID  |payload|HID    | protocol | reserved| protocol| tx-prot | tx-prot | data |
+  |      |       |status |          |         | status  | MSB     | LSB     |      |
+  +------+-------+-------+----------+---------+---------+---------+---------+-------...
+ 
+  tx-prot = number of bytes transmitted (for this protocol packet) from device to host
+ 
+ 
+  if the packet(s) need more than 1 HID-report
+ 
+ Byte 0      1       2       3.... 63
+  +------+-------+------+----------+---... +-------------+------- -----------+
+  | TID  |payload|status| packet(s)| 
+  |      | = 61  |      |          |
+  +------+-------+------+----------+---...-+-------------+-------.... -----------+
+  
+  +------+-------+------+----------+---... +-------------+------- -----------+
+  | new  |payload|status| packet(s)| 
+  | TID  | = 61  |      | continued|
+  +------+-------+------+----------+---...-+-------------+-------.... -----------+
+ 
+  .... as many HID reports as needed until the packet(s) are totally
+  transmitted (here is how the final report might look like):
+ 
+  +------+-------+------+----------+---... +-------------+------- -----------+
+  | next |payload|status| packet(s)        | padding if necessary            | 
+  | TID  | <= 61 |      | continued        |                                 |
+  +------+-------+------+----------+---...-+-------------+-------.... -----------+
+ 
+Ex:
+Device to Host, tx-prot = 310, 則封包需分割成 6 筆來傳送
+(1)64 bytes --> 還剩下 : 310 - (64-8) = 254(8 bytes = header, 56 bytes = data)
+(2)64 bytes --> 還剩下 : 254 - (64-3) = 193(3 bytes = header, 61 bytes = data)
+(3)64 bytes --> 還剩下 : 193 - (64-3) = 132(3 bytes = header, 61 bytes = data)
+(4)64 bytes --> 還剩下 : 132 - (64-3) =  71(3 bytes = header, 61 bytes = data)
+(5)64 bytes --> 還剩下 : 71  - (64-3) =  10(3 bytes = header, 61 bytes = data)
+(6)64 bytes --> 前13 bytes為封包(3 bytes header + 10 bytes data), 後面其他 bytes可以丟掉
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

@@ -1,0 +1,1 @@
+C:\Users\stone\SkyDrive\Desktop\Rfid\RFIDUSB\HID_sample\C#\HidInfraredSensor.csproj;neutral
