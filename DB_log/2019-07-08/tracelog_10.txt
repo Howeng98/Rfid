@@ -1,0 +1,8 @@
+2019-07-08 10:33:11,289 - INFO : <connection object at 0x7f2f95c16798; dsn: 'user=happig password=xxx dbname=happig host=140.116.247.120 port=36432 options='-c statement_timeout=5s'', closed: 0>
+2019-07-08 10:33:11,291 - ERROR : (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+2019-07-08 10:33:35,309 - INFO : <connection object at 0x7fc4d0632798; dsn: 'user=happig password=xxx dbname=happig host=140.116.247.120 port=36432 options='-c statement_timeout=5s'', closed: 0>
+2019-07-08 10:33:35,316 - ERROR : (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+2019-07-08 10:47:29,098 - INFO : <connection object at 0x7f2991331798; dsn: 'user=happig password=xxx dbname=happig host=140.116.247.120 port=36432 options='-c statement_timeout=5s'', closed: 0>
+2019-07-08 10:47:29,101 - ERROR : (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+2019-07-08 10:52:02,811 - INFO : <connection object at 0x7f45e97538d0; dsn: 'user=happig password=xxx dbname=happig host=140.116.247.120 port=36432 options='-c statement_timeout=5s'', closed: 0>
+2019-07-08 10:52:02,814 - ERROR : (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
