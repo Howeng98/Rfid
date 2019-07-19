@@ -83,7 +83,7 @@ def setup_via_net(server, mac, device_ip):
     destination_port = int(IP_setting["DestinationPort"])
     baud_rate = int(IP_setting["BaudRate"])
     delay_send = 50  # ms
-    # TODO let device ip can be changed, and let defaultgate use its ip first 3 number
+    # TODO device ip 讓可以改， defaultgate 用自己ip的前3個
     hexs = mac + mac + intArray2hex(device_ip) + int2hex(device_port, 2) + intArray2hex(destination_ip) + int2hex(destination_port, 2) + intArray2hex(
         default_gateway) + intArray2hex(subnet_mask) + ' 01 ' + int2hex(baud_rate, 3) + ' 00 00 00 ' + int2hex(delay_send) + ' 00 01 00 be 0f 20 b0'
     bs = bytearray.fromhex(hexs)
@@ -170,7 +170,7 @@ def scan_decode(val):
             if val[0] == hex2int('02') and val[1] == hex2int('53'):
                 data_len = val[2] + 2
                 tid = intArray2hex(val[3:data_len])
-                print('Tag TID:', tid,'\n\n')
+                print('Tag TID:', tid, end='\n\n')
                 # TODO
             elif val[0] == hex2int('02') and val[1] == hex2int('54'):
                 data_len = val[2] + 2
@@ -186,7 +186,7 @@ def scan_decode(val):
                     freq += 0x0D * 256 * 256
                 # print('scan frequency %d kHz' % (freq), end='\t\t')
                 epc = intArray2hex(val[10:data_len])
-                print('Tag EPC:', epc,'\n\n')
+                print('Tag EPC:', epc, end='\n\n')
                 epcs.append(epc)
                 val = val[data_len+2:]
             else:
@@ -220,7 +220,7 @@ def change_ip():
 
 
 def send(send_string):
-    print('Send: ' + send_string, '')
+    print('Send: ' + send_string, end='')
     try:
         connection.sendall(str.encode(send_string))
         data = connection.recv(1024)
@@ -236,7 +236,7 @@ def stop_scan():
 def start_scan():
     send('AT+0001-Scan:1\x0d\x0a')
 
-connection.sendall
+
 def At_comment():
     cm = input('AT Comment: ')
     cm += '\x0d\x0a'
@@ -253,7 +253,7 @@ def thread_func(thread_idx, sock, mac_addr_pairs):
     for mac, addr in mac_addr_pairs:
         if cli_addr[0] == addr:
             thread_mac = mac
-    print(thread_name, 'connected to', cli_addr, ', mac =', thread_mac)    
+    print(thread_name, 'connected to', cli_addr, ', mac =', thread_mac)
     while True:
         tags = []
         try:
@@ -284,9 +284,10 @@ def thread_func(thread_idx, sock, mac_addr_pairs):
         except Exception as e:
             print(e)
         time_now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        (shed_id, sensor_id, tag_id, read_time)
-        ##for tag in tags:
-        ##    DATABASE.insert_tag(3, mac2macdash(thread_mac), tag, time_now)    
+        # (shed_id, sensor_id, tag_id, read_time)
+        #for tag in tags:
+        #    DATABASE.insert_tag(3, mac2macdash(thread_mac), tag, time_now)
+
 
 def iniatialize():
     get_setting_data()
