@@ -12,10 +12,10 @@
         "port": "3306"
     },
     "POSTGRE": {
-        "database": "happig",
-        "user": "happig",
-        "password": "NckuHappig",
-        "host": "140.116.247.120",
-        "port": "36432"
+        "database": "",
+        "user": "",
+        "password": "",
+        "host": "",
+        "port": ""
     }
 }
