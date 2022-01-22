@@ -21,26 +21,4 @@ $ sudo ./server.py
 	$ mysql -u root -p
 	```
 2. Mysql 密碼等資訊記錄在 `setting.json` ，和其他 .py 檔放在同一個資料夾裡面。
-    ```json
-    {
-        "IP": {
-            "DevicePort": "8080",
-            "DestinationPort": "8080",
-            "BaudRate": "115200"
-        },
-        "MYSQL": {
-            "database": "farmer_pig",
-            "user": "root",
-            "password": "root",
-            "host": "localhost",
-            "port": "3306"
-        },
-        "POSTGRE": {
-            "database": "happig",
-            "user": "happig",
-            "password": "NckuHappig",
-            "host": "140.116.247.120",
-            "port": "36432"
-        }
-    }
-    ```
+   
